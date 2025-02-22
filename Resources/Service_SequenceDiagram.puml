@@ -1,0 +1,70 @@
+@startuml
+title ApplicationNotResponding start_service
+' 声明参与者（从左到右的顺序），也可以使用actor、boundary、control等区分角色.
+participant Activity 
+participant ContextImpl as Context
+participant ActivityManagerService as AMS
+participant ActiveServices as AS
+participant RuntimeInit as RTM
+participant ActivityThread as AT
+participant ApplicationThread as APPT
+participant AppErrors as AE
+
+' 这里为了对应截图里标出的序号，我直接写在消息里，实际可去掉.
+' (也可以改用 autonumber， 自动给消息编号.)
+
+activate Activity #DarkSalmon
+Activity -> Activity: 1: startService
+Activity -> Context: 2: startService
+deactivate Activity #DarkSalmon
+activate Context 
+Context -> Context: 3: startServiceCommon
+Context -> AMS: 4:startService
+deactivate Context
+activate AMS
+AMS -> AS : 5: startServiceLocked
+deactivate AMS
+activate AS
+AS -> AS : 6: startServiceInnerLocked
+AS -> AS : 7: bindUpServiceLocked
+AS -> AMS : 8: startProcessLocked
+deactivate AS
+activate AMS 
+AMS -> RTM : 9: invokeStaticMain
+deactivate AMS
+activate RTM
+RTM -> AT : 10: main
+deactivate RTM
+activate AT
+AT -> AT : 11: attach
+AT -> AMS : 12: attachApplication
+deactivate AT
+activate AMS
+AMS -> AMS: 13: attachApplicationLocked
+AMS -> AS: 14:attachApplicationLocked
+deactivate AMS
+activate AS
+AS -> AS: 15:realStartServiceLocked
+AS -> AS: 16: bumpServiceExecutingLocked
+AS -> AS: 17: scheduleServiceTimeoutLocked
+AS -> APPT: 18: scheduleCreateService
+AS -> AS: 19:sendServiceArgsLocked
+AS -> APPT: 20: scheduleServiceArgs
+AS -> AS: 21: bumpServiceExecutingLocked
+deactivate AS
+activate APPT
+APPT -> AT: 22: handleServicerArgs
+deactivate APPT
+activate AT
+AT -> AMS: 23: servciceDoneExecuting
+deactivate AT
+activate AMS
+AMS -> AS: 24: serviceDoneExecutingLocked
+deactivate AMS
+activate AS
+AS -> AE: 25: appNotResponding
+deactivate AS
+activate AE
+deactivate AE
+
+@enduml
