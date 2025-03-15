@@ -32,7 +32,7 @@
 
 # 八、细分领域🚀
 ## 8.1 性能监控
-* [移动APM及行业调研](https://github.com/David9302/Excellent-Android-Notebook/blob/main/APM/移动端APM建设方案调研.md)
+* [移动APM及行业调研](https://github.com/David9302/Excellent-Android-Notebook/blob/main/Other/APM/%E7%A7%BB%E5%8A%A8%E7%AB%AFAPM%E5%BB%BA%E8%AE%BE%E6%96%B9%E6%A1%88%E8%B0%83%E7%A0%94.md)
 ## 8.2 性能优化
 <u>*[弱网优化相关文章](https://segmentfault.com/a/1190000045473906)*</u>
 
