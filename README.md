@@ -15,12 +15,13 @@
 # 三、数据结构/算法✏️
 
 # 四、计算机基础💻
-
+* 网络相关
+* 计算组成原理
 # 五、Java☕️
 
 # 六、Android🤖
 ## 6.1View 相关
-* RecyclerView 系列: 
+* [RecyclerView 系列 - （绘制、缓存、优化）](https://github.com/David9302/Excellent-Android-Notebook/tree/main/Android/View/RecyclerView)
 ## 6.2 AOSP 源码分析集
 * 主要是从Android ANR机制相关的分析，也后续会讲解定位及应用.<br>
   [ANR 分析篇](https://github.com/David9302/Excellent-Android-Notebook/blob/main/AOSP/ANR_Analyse.md)
@@ -34,7 +35,7 @@
 ## 8.1 性能监控
 * [移动APM及行业调研](https://github.com/David9302/Excellent-Android-Notebook/blob/main/Other/APM/%E7%A7%BB%E5%8A%A8%E7%AB%AFAPM%E5%BB%BA%E8%AE%BE%E6%96%B9%E6%A1%88%E8%B0%83%E7%A0%94.md)
 ## 8.2 性能优化
-<u>*[弱网优化相关文章](https://segmentfault.com/a/1190000045473906)*</u>
+* [弱网优化相关文章](https://segmentfault.com/a/1190000045473906)
 
 # 九、其他💪🏻
 * UML
