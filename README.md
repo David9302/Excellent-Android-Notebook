@@ -19,12 +19,12 @@
 # 五、Java☕️
 
 # 六、Android🤖
-## View 相关
-
-## 6.1 AOSP 源码分析集
+## 6.1View 相关
+* RecyclerView 系列: 
+## 6.2 AOSP 源码分析集
 * 主要是从Android ANR机制相关的分析，也后续会讲解定位及应用.<br>
   [ANR 分析篇](https://github.com/David9302/Excellent-Android-Notebook/blob/main/AOSP/ANR_Analyse.md)
-## 6.2 三方开源框架分析集合
+## 6.3 三方开源框架分析集合
 * https://github.com/alibaba/ARouter/blob/master/README_CN.md
 
 # 七、应用架构🏡
