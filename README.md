@@ -19,6 +19,7 @@
 # 五、Java☕️
 
 # 六、Android🤖
+## View 相关
 
 ## 6.1 AOSP 源码分析集
 * 主要是从Android ANR机制相关的分析，也后续会讲解定位及应用.<br>
@@ -28,8 +29,10 @@
 
 # 七、应用架构🏡
 
+
 # 八、细分领域🚀
 ## 8.1 性能监控
+* [移动APM及行业调研](https://github.com/David9302/Excellent-Android-Notebook/blob/main/APM/移动端APM 建设方案调研.md)
 ## 8.2 性能优化
 <u>*[弱网优化相关文章](https://segmentfault.com/a/1190000045473906)*</u>
 
